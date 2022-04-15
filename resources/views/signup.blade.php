@@ -12,40 +12,41 @@
         <div class="signup-container">
             <div class="signup-left">
                 <h1>Sign Up</h1>
-                <form action="#">
+                <form action="/submit-sign-in" method="post">
+                    @csrf
                     <div class="row-content">
                         <div class="signup-content">
                             <label for="">First Name</label>
-                            <input type="text" placeholder="Enter email address">
+                            <input name = "firstName" type="text" placeholder="First Name">
                         </div>
                         <div class="signup-content">
                             <label for="">Last Name</label>
-                            <input type="text" placeholder="Enter email address">
+                            <input name = "lastName" type="text" placeholder="Last Name">
                         </div>
                     </div>
                     <div class="signup-content">
                         <label for="">Email</label>
-                        <input type="email" placeholder="Enter email address">
+                        <input name = "email" type="email" placeholder="Enter Email Address">
                     </div>
                     <div class="signup-content">
                         <label for="">Address</label>
-                        <input type="text" placeholder="Enter email address">
+                        <input name = "address" type="text" placeholder="Enter Address">
                     </div>
                     <div class="row-content">
                         <div class="signup-content">
                             <label for="">Phone Number</label>
-                            <input type="text" placeholder="Enter email address">
+                            <input name = "phone" type="text" placeholder="+6281122334">
                         </div>
                         <div class="signup-content">
                             <label for="">Date of Birth</label>
-                            <input type="text" placeholder="Enter email address">
+                            <input name = "dob" type="date" placeholder="DD-MM-YYYY">
                         </div>
                     </div>
                     <div class="signup-content">
                         <label for="">Password</label>
-                        <input type="password" placeholder="Enter password">                   
+                        <input name = "password" type="password" placeholder="Enter password">                   
                     </div>
-                    <button>Sign up</button>
+                    <button type="submit">Sign up</button>
                 </form>
                 <!-- <div class="login-sign">
                     <a href="">Sign up</a>
